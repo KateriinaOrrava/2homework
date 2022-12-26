@@ -11,6 +11,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
       @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
     </style>
     <link rel="stylesheet" href="/styles.css" />
     <title>SECOND HOMEWORK - FORMS</title>
@@ -88,6 +89,83 @@
           </button>
         </div>
       </form></section>
+
+
+
+      <section class="contact-us-form">
+        <h2 class="contact-us">Contact Us</h2>
+        <form method="get" class="contact-us-form">
+          <div class="contact-us-main-info">
+            
+
+            <div class="name-section">
+              <label>
+                <p class="input-name">
+                  Name
+                </p>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                />
+                
+            </label>
+            </div>
+  
+            <div class="surname-section">
+              <label>
+                <p class="input-surrname">
+                  Surname
+                </p>
+                <input
+                    type="text"
+                    id="surname"
+                    placeholder="Enter your surname"
+                    required
+                />
+              </label>
+            </div>
+  
+  
+            <div class="date-section">
+              <label>
+                <p class="input-date-of-oppointment">
+                  Enter date of appointment
+                </p>
+                <input type="date" name="party" min="2023-01-02" max="2024-12-31" />
+              </label>
+            </div>
+  
+  
+            <div class="number-section">
+              <label
+                ><p class="input-number">Enter your Number (in format of xx-xxx-xxx):
+                  </p>
+                  <input type="tel" name="telephone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" required>  </label>
+            </div>
+
+
+          </div>
+          
+          <br>
+          <div class="subcribe-contact-us">
+            <input type="checkbox" id="subscribe-to-news" name="subscribe-to-news" >
+          <label for="subscribe-to-news"> Subscribe to news</label>
+          </div>
+<div class="contact-us-message">
+  <p class="contact-us-message-text">Message</p>
+ 
+         <textarea rows = "5" cols = "50" name = "description" placeholder="Type Message" required>
+            Enter description here...
+         </textarea>
+</div>
+
+          <input type="submit">
+
+          
+        </form>
+      </section>
     </div>
 
     <script src="/scripts.js"></script>
