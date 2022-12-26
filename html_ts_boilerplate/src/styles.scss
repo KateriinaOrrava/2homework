@@ -88,7 +88,11 @@ form {
   width: 100%;
 }
 .input-username,
-.input-password {
+.input-password,
+.input-date-of-oppointment,
+.input-name,
+.input-surname,
+.input-number {
   font-family: "Roboto Condensed";
   font-weight: 400;
   font-size: 16px;
@@ -190,11 +194,13 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.subscription-switch {
+.subscription-switch,
+.subscribe-contact-us {
   display: flex;
   flex-direction: row;
 }
-p.subscription-switch {
+p.subscription-switch,
+p.subscribe-to-news {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -321,6 +327,80 @@ h2.contact-us {
 
   flex: none;
   order: 0;
+  flex-grow: 0;
+}
+input#subscribe-to-news {
+  accent-color: #fd7918;
+  color: #bab9bd;
+  margin-right: 11px;
+}
+
+#telephone,
+#name,
+#surname,
+#email {
+  background-color: #fafafa;
+  color: #bab9bd;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-family: "Roboto Condensed";
+  padding: 12px 0px 12px 12px;
+  border: none;
+  width: 100%;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+p.contact-us-message-text {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #130f1c;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 34px 0px 4px;
+}
+textarea {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  background: #f3f3f5;
+  border: none;
+  border-radius: 5px;
+}
+#submit-contact-us {
+  align-self: flex-end;
+  width: 141px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0px;
+  background: #651fff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
   flex-grow: 0;
 }
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
