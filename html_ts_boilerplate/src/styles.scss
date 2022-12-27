@@ -89,10 +89,16 @@ form {
 }
 .input-username,
 .input-password,
-.input-date-of-oppointment,
+.input-email,
 .input-name,
 .input-surname,
-.input-number {
+.input-number,
+.input-username-2,
+.input-password-2,
+.input-email-2,
+.input-name-2,
+.input-surname-2,
+.input-number-2 {
   font-family: "Roboto Condensed";
   font-weight: 400;
   font-size: 16px;
@@ -278,7 +284,7 @@ section.contact-us-form {
   flex-direction: column;
   align-items: flex-start;
   padding: 32px;
-  width: 665px;
+  max-width: 665px;
   background: #ffffff;
   box-shadow: 40px 40px 60px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -311,11 +317,19 @@ form.contact-us-form {
 .number-section,
 .name-section,
 .surname-section,
-.date-section {
+.date-section,
+.email-section,
+.email-section-2,
+.number-section-2,
+.name-section-2,
+.surname-section-2,
+.date-section-2 {
   width: 47%;
 }
 
-h2.contact-us {
+h2.contact-us,
+h2.contact-us-2,
+h2.check-out {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -338,7 +352,14 @@ input#subscribe-to-news {
 #telephone,
 #name,
 #surname,
-#email {
+#email,
+#telephone-2,
+#name-2,
+#surname-2,
+#email-2,
+#card-name,
+#card-num,
+#exp-month {
   background-color: #fafafa;
   color: #bab9bd;
   border-radius: 5px;
@@ -379,7 +400,9 @@ textarea {
   border: none;
   border-radius: 5px;
 }
-#submit-contact-us {
+#submit-contact-us,
+#submit-contact-us-2,
+#submit-check-out {
   align-self: flex-end;
   width: 141px;
   display: flex;
@@ -395,7 +418,7 @@ textarea {
   font-size: 16px;
   line-height: 24px;
   margin-top: 20px;
-  margin-right: 20px;
+
   margin-bottom: 32px;
   /* Inside auto layout */
 
@@ -419,5 +442,191 @@ textarea {
   }
   header {
     display: none;
+  }
+}
+/////////////////////////////////////////////
+///
+///
+section.contact-us-form-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 665px;
+  padding: 0px;
+  box-shadow: 40px 40px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.company-info {
+  background-color: #651fff;
+  color: #ffffff;
+  height: 604px;
+  border-radius: 10px;
+}
+.company-info-content {
+  margin: 46px 16px 0px 16px;
+}
+h3.contact-info {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 32px;
+}
+p.contact-info {
+  margin-bottom: 32px;
+}
+.contact-info-number,
+.contact-info-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.company-info p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* White */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+.contact-us-info-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #ffffff;
+  margin: 32px 16px 32px 32px;
+}
+.contact-us-main-info-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  width: 100%;
+  margin: 0px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.submit-button {
+  align-self: flex-end;
+  margin: 0;
+}
+
+section.check-out {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  width: 665px;
+  box-shadow: 40px 40px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.your-order {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 135px;
+}
+h5.your-order,
+h5.delivery-details,
+h5.payment-method {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  color: #130f1c;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.order-description {
+  margin-left: 56px;
+}
+p.order-piece,
+p.name-surname,
+p.shipping-type,
+.card-info {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #130f1c;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+p.small {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5a5761;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.delivery-details-info {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.card-information {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.name-on-card,
+.number-on-car,
+.date-on-card {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #company-info {
+    display: none;
+  }
+  #contact-us-form .contact-us-main-info {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -90,7 +90,7 @@
         </form>
       </section>
 
-      <section class="contact-us-form">
+      <section class="contact-us-form" id="contact-us-form">
         <h2 class="contact-us">Contact Us</h2>
         <form method="get" class="contact-us-form">
           <div class="contact-us-main-info">
@@ -108,7 +108,7 @@
 
             <div class="surname-section">
               <label>
-                <p class="input-surrname">Enter your surname:</p>
+                <p class="input-surname">Enter your surname:</p>
                 <input
                   type="text"
                   id="surname"
@@ -133,7 +133,7 @@
 
             <div class="email-section">
               <label>
-                <p class="input-date-of-oppointment">Enter email:</p>
+                <p class="input-email">Enter email:</p>
                 <input
                   type="email"
                   id="email"
@@ -170,6 +170,164 @@
 
           <input type="submit" id="submit-contact-us" />
         </form>
+      </section>
+
+      <!--contact us 2-->
+      <section class="contact-us-form-2">
+        <div class="company-info" id="company-info">
+          <div class="company-info-content">
+            <h3 class="contact-info">Contact Information</h3>
+            <p class="contact-info">
+              Here’s some additional support text to help set user expectations.
+            </p>
+            <div class="contact-info-number">
+              <img src="assets/images/tel.png" alt="phone-logo" />
+              <p>123-456-7890</p>
+            </div>
+            <div class="contact-info-email">
+              <img src="assets/images/Mail.png" alt="email.logo" />
+              <p>support@minerva.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-us-info-2">
+          <h2 class="contact-us-2">Contact Us</h2>
+          <form method="get" class="contact-us-form-2">
+            <div class="contact-us-main-info-2">
+              <div class="name-section-2">
+                <label>
+                  <p class="input-name-2">Enter your name:</p>
+                  <input
+                    type="text"
+                    id="name-2"
+                    placeholder="Example: James"
+                    required
+                  />
+                </label>
+              </div>
+
+              <div class="surname-section-2">
+                <label>
+                  <p class="input-surname-2">Enter your surname:</p>
+                  <input
+                    type="text"
+                    id="surname-2"
+                    placeholder="Example: Bond"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="number-section-2">
+                <label
+                  ><p class="input-number-2">Enter your number (xx-xxx-xxx):</p>
+                  <input
+                    type="tel"
+                    name="telephone"
+                    id="telephone-2"
+                    pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}"
+                    placeholder="Example: 00-700-700"
+                    required
+                  />
+                </label>
+              </div>
+
+              <div class="email-section-2">
+                <label>
+                  <p class="input-email-2">Enter email:</p>
+                  <input
+                    type="email"
+                    id="email-2"
+                    name="email"
+                    placeholder="Example: iambond@james.com"
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="contact-us-message-2">
+              <p class="contact-us-message-text" -2>Message</p>
+              <textarea
+                rows="5"
+                id="contact-us-message-2"
+                name="description"
+                required
+                cols="70%"
+              >
+              </textarea>
+            </div>
+          </form>
+          <div class="submit-button">
+            <input type="submit" id="submit-contact-us-2" />
+          </div>
+        </div>
+      </section>
+
+      <section class="check-out" style="margin-top: 100px">
+        <div class="check-out"><h2 class="check-out">Check Out</h2></div>
+
+        <div class="your-order">
+          <div class="your-order-info">
+            <h5 class="your-order">Your Order</h5>
+            <div class="order-description">
+              <p class="order-piece">Eggshell Plant Pot</p>
+              <p class="order-size small">Size: Medium</p>
+              <p class="order-qty small">Qty: 1</p>
+              <p class="order-price small">$25.00</p>
+            </div>
+          </div>
+          <div class="delivery-details">
+            <h5 class="delivery-details">Delivery Details</h5>
+            <div class="delivery-details-info">
+              <div class="order-receiver">
+                <p class="name-surname">Adam Sandler</p>
+                <p class="street small">1234 Fake St</p>
+                <p class="adress small">Milwaukee, WI 53203</p>
+              </div>
+              <div class="shipping-info">
+                <p class="shipping-type">Shipping Speed</p>
+                <p class="shipping-price small">$7.00 No Rush Shipping</p>
+                <p class="shipping-date small">Arrives by 1/16/22</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment-method">
+          <h5 class="payment-method">Payment Method</h5>
+          <div class="check-out-form">
+            <div class="card-information">
+              <div class="name-on-card">
+                <label for="card-name" class="card-info">Name on Card</label>
+                <input
+                  type="text"
+                  id="card-name"
+                  name="card-name"
+                  placeholder="John More Doe"
+                />
+              </div>
+              <div class="number-on-card">
+                <label for="card-num" class="card-info"
+                  >Credit card number</label
+                >
+                <input
+                  type="text"
+                  id="card-num"
+                  name="card-number"
+                  placeholder="1111-2222-3333-4444"
+                />
+              </div>
+              <div class="date-on-card">
+                <label for="expmonth" class="card-info">Exp Month</label>
+                <input
+                  type="text"
+                  id="exp-month"
+                  name="exp-month"
+                  placeholder="September"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="submit" id="submit-check-out" value="Continue" />
       </section>
     </div>
 
